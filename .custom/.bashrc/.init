@@ -1,0 +1,11 @@
+# Démarrage
+CUSTOMDIR='.custom/.bashrc'
+
+# Paramètres généraux
+. ~/${CUSTOMDIR}/.general
+
+# Apparence du terminal
+. ~/${CUSTOMDIR}/.ps1
+
+# Customisations diverses
+. ~/${CUSTOMDIR}/.other

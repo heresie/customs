@@ -1,0 +1,19 @@
+{
+  "repositories": {
+    "ls_colors": {
+      "type": "package",
+      "package": {
+        "name": "trapd00r/LS_COLORS",
+        "version": "1.0",
+        "source": {
+          "url": "https://github.com/trapd00r/LS_COLORS",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    }
+  },
+  "require": {
+    "trapd00r/LS_COLORS": "*"
+  }
+}

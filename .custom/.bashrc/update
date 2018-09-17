@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ "\u" == "root" ]
+then
+	cmd="sudo"
+fi
+
+$cmd composer install --no-autoloader
+
