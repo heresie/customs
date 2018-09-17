@@ -5,6 +5,6 @@ Installation
 ===
 
 ```shell
-$ cp ~/.bashrc ~/.customs/.bashrc_previous
+$ cp ~/.bashrc /path/to/customs/.customs/.bashrc_previous
 $ cp /path/to/customs/.customs/.bashrc_example ~/.bashrc
 ```
