@@ -18,14 +18,14 @@ sep='─'
 
 prompt_k8s(){
   k8s_current_context=$(kubectl config current-context 2> /dev/null)
-  if [[ $? -eq 0 ]] ; then echo -e "${RED2}(${YELLOW2}${k8s_current_context}${RED2})${NC2}${sep}"; fi
+  if [[ $? -eq 0 ]] ; then echo -e "${RED_ESC}(${YELLOW_ESC}${k8s_current_context}${RED_ESC})${NC_ESC}${sep}"; fi
 }
 
 parse_git_branch() {
   is_git=$(git branch 2> /dev/null)
   if [[ $? -eq 0 ]] ; then
     git_current_branch=$(git branch | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
-    echo -e "${RED2}(${YELLOW2}${git_current_branch}${RED2})${NC2}${sep}"
+    echo -e "${RED_ESC}(${YELLOW_ESC}${git_current_branch}${RED_ESC})${NC_ESC}${sep}"
   fi
 }
 
